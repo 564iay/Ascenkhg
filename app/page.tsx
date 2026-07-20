@@ -10,6 +10,8 @@ import {
   Stats,
 } from '@/components/sections/Sections';
 
+export const dynamic = 'force-static';
+
 export default function Page() {
   const jsonLd = {
     '@context': 'https://schema.org',
