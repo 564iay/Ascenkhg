@@ -1,0 +1,3 @@
+import type { ReactNode } from 'react';
+import Link from 'next/link';
+export function PremiumButton({href,children,variant='primary'}:{href:string;children:ReactNode;variant?:'primary'|'secondary'}){return <Link href={href} className={`focus-ring group inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-medium tracking-wide transition ${variant==='primary'?'border border-[#d8b87355] bg-[#d8b87312] text-white shadow-[0_0_40px_rgba(216,184,115,.12)] hover:bg-[#d8b87322]':'text-[#b9bac1] hover:text-white'}`}><span>{children}</span><span className="h-px w-8 bg-[#d8b873] transition group-hover:w-12"/></Link>}
